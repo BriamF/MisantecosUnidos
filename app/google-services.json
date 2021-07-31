@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "252188269104",
+    "project_id": "misantecosunidos-6ffc7",
+    "storage_bucket": "misantecosunidos-6ffc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252188269104:android:315b59b52d1701f5f5ebf5",
+        "android_client_info": {
+          "package_name": "com.itsm.misantecosunidos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252188269104-1omrfaj6r9uokqllf2bq08ad2ps4i8ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itsm.misantecosunidos",
+            "certificate_hash": "d4bf76a82172ed4cc42dc5a7f8c1e03f148dab5d"
+          }
+        },
+        {
+          "client_id": "252188269104-q0gu9k8dj1rh4599bvib8achjcln5iib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA-avLq7KkY-EIp1EHr-fv4Zd9gr_99m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252188269104-q0gu9k8dj1rh4599bvib8achjcln5iib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

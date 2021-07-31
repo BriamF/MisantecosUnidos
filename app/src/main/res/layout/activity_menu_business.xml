@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.MenuBusiness"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="PRODUCTOS"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/dark"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher_background" />
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/inpNameBusiness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nombre del negocio"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:layout_width="350dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/ic_product">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inpName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre del producto" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+                    android:layout_width="350dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@drawable/ic_monetization">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inpPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Precio" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btnUploadImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar imagen"
+                    android:drawableStart="@drawable/ic_file_upload"
+                    android:textAllCaps="false"/>
+
+
+                <Button
+                    android:id="@+id/btnSaveProduct"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_edges_pink"
+                    android:paddingStart="20dp"
+                    android:text="Guardar producto"
+                    android:drawableStart="@drawable/ic_add"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"/>
+
+                <Button
+                    android:id="@+id/btnLogOutB"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:text="Cerrar sesión"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

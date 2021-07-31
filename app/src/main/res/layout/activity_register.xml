@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.Register"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="OPCIONES DE REGISTRO"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/dark"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnRegisterUser"
+            android:layout_width="300dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_edges_pink"
+            android:drawableStart="@drawable/ic_person_add"
+            android:paddingStart="20dp"
+            android:text="Registro de usuario"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnRegisterBusiness"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_business_white"
+            android:background="@drawable/round_edges_pink"
+            android:paddingStart="20dp"
+            android:text="Registro de negocio"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btnBackLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_edges_white"
+            android:drawableStart="@drawable/ic_arrow_back"
+            android:paddingStart="20dp"
+            android:text="Regresar"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="@color/pink"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
